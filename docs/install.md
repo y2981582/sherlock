@@ -62,7 +62,8 @@ docker run --rm -t sherlock/sherlock user123
 
 # If you need to save the output file... (modify as needed)
 # Output file will land in ${pwd}/results
-docker run --rm -t -v "$PWD/results:/opt/sherlock/results" sherlock/sherlock -o /opt/sherlock/results/text.txt user123
+docker run --rm -t -v "$PWD/results:/opt/sherlock/results" sherlock/sherlock -o /opt/sherlock/results/text.txt anuppoudel_01
+
 ```
 
 ```bash
@@ -92,4 +93,8 @@ docker compose run sherlock user123
 # Assumes ${pwd} is repository root
 docker build -t sherlock .
 docker run --rm -t sherlock user123
-```
+
+
+
+
+
